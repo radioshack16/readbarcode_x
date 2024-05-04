@@ -1,2 +1,2 @@
 # readbarcode_x
-Read barcode NW7 on receipts
+Read barcode NW-7 on receipts
