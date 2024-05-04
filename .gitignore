@@ -1,3 +1,13 @@
+*.swp
+temp.*
+temp_*.txt
+*.tmp
+hoge.log
+~$*.xlsx
+*~
+tmp_result/
+
+########
 *.gem
 *.rbc
 /.config
