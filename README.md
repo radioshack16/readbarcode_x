@@ -27,8 +27,8 @@ Read barcode NW-7 on receipts
 - PNG format のみ
 - CANDO のレシートをスキャンしたもの
 - grayscale: 0..255
-- 密度: TBD [DPI]
-- scanner: Cannon製 TBD
+- 密度: 300 [dpi]
+- scanner: Cannon製 DR-C230
   
 ## 前提とするバーコードフォーマット
 (試したレシートがそうなっていた)
