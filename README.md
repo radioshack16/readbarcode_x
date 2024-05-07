@@ -75,4 +75,9 @@ a2023063020000002a
 - 帯域制限が適当。現時点 \[1 2 1\] としている。
 - デジットチェックの処理をしていない。
 
+## 参考資料
+1. [NW-7(CODABAR)基礎知識](https://k-cr.jp/assets/downloads/support/spec/barcode/NW-7(CODABAR).pdf)
+
+2. [4.4.7 NW-7バーコード, uCosminexus EUR システム設計ガイド](https://itpfdoc.hitachi.co.jp/manuals/3020/3020770230/EUDS0050.HTM#A0184)
+<br>
 以上
