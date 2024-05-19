@@ -54,7 +54,8 @@ end
 # 8. Decode the codes into characters, selecting minimum Euclidean distance codes
 #--------------------------------------------------------------------------------
 
-"tmp_result".mkdir_p
+$tmp_dir = "tmp_result"
+$tmp_dir.mkdir_p
 clk_over_n = 4
 
 img_aa                  = src_path.read_png_to_img_aa
@@ -63,7 +64,7 @@ clk_sig_over_n_a        = bcode_sig_a.extract_clock_sig(clk_over_n)
 resample_pos_a          = clk_sig_over_n_a.to_sample_pos_a(clk_over_n)
 eq_tap_a                = [1, 2, 1].sum_normalize   # LPF as a bandwidth-limit filter. TENTATIVE
 bcode_sig_eq_a          = bcode_sig_a.convolve eq_tap_a
-bcode_resampled_a       = bcode_sig_eq_a.resample_BW_full(resample_pos_a, [0.5, 3])
+bcode_resampled_a       = bcode_sig_eq_a.resample_BW_full(resample_pos_a, [0.5, 3])   # oversampled inside
 bcode_resampled_dcbal_a = bcode_resampled_a.dc_balance
 sync_pos_left, sync_pos_right = bcode_resampled_dcbal_a.sync_pos_left_right(
                                                         $barcode_NW7_CANDO_sync_left,

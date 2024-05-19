@@ -280,6 +280,10 @@ class Array
       pp resample_pos_a[0, 3]
       pp resample_pos_a[-3, 3]
     end
+      #------------------------------
+      # Save sig into text file
+      #------------------------------
+      resample_pos_a.join("\n").to_file("#{$tmp_dir}/T600_resample_pos_a.txt")
     resample_pos_a
   end
 

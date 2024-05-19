@@ -100,6 +100,10 @@ class Array
       puts "sig_up_bl_a.size  = %d" % sig_up_bl_a.size
       puts "---"
     end
+      #------------------------------
+      # Save sig into text file
+      #------------------------------
+      sig_up_bl_a.join("\n").to_file("#{$tmp_dir}/T610_bcode_sig_up_bl_x#{ovr_n}_a.txt")
     #------------------------------
     # 3) Down-sample
     puts "sample_cnt = %d" % resample_pos_a.size  if $dmon
